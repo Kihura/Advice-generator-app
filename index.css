@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope';
+    overflow: hidden;
+}
+
+.parent{
+    margin-top:clamp(12vw,12vw,100px);
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 8px;
+    width: clamp(0vw,45vw,500px);
+    height: clamp(0vw,35vw,320px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: hsl(150, 100%, 66%);
+}
+
+.dice{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: clamp(0px,3vw,120px);
+    border-radius: 50%;
+    padding: clamp(0rem,2vw,0.9rem);
+    background-color: hsl(150, 100%, 66%);
+}
+
+.pattern{
+    position: relative;
+    top: clamp(0px,2vw, 91.125px);
+    width: clamp(0px,35vw,425.25px);
+    height: 1.2rem;
+}
+
+.advice{
+    font-size: clamp(0px,9vw,30px);
+    width: clamp(0px,40vw,486px);
+    height: clamp(0px,15vw,182.25px);
+    padding: none;
+    color: hsl(193, 38%, 86%);
+    display: flex;
+}
+
+img{
+    width: clamp(0px,2vw,24.3px);
+}
+.dice:hover{
+    box-shadow: 0 0 10px 5px hsl(150, 100%, 66%);
+}
+
+@media (max-width:1000px){
+    .parent{
+        margin-top:35vw;
+        border-radius: 5px;
+        width: 80vw;
+        height: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        color: hsl(150, 100%, 66%);
+    }
+    
+    .dice{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 7vw;
+        border-radius: 50%;
+        padding: 0.9rem;
+        background-color: hsl(150, 100%, 66%);
+    }
+    
+    .pattern{
+        position: relative;
+        top: 4vw;
+        width: 70vw;
+        height: 1.2rem;
+    }
+    
+    
+    img{
+        width: 1rem;
+    }
+    .advice{
+        font-size: 4vw;
+        width: 75vw;
+        height: 30vw;
+        padding: none;
+        
+    }
+}
+
+@media (max-width:470px){
+    .parent{
+        margin-top:35vw;
+        border-radius: 5px;
+        width: 90vw;
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pattern{
+        height: 0.8rem;
+    }
+    .advice{
+        font-size: 5vw;
+        width: 85vw;
+        height: 40vw;
+        padding: none;
+        
+    }
+
+    .text{
+        font-size: 3vw;
+    }
+}
